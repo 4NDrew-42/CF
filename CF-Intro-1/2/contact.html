@@ -14,15 +14,14 @@
 <body>
         <header>
             <div>
-                <img src="img/James_Klein-ca.png" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                <img src="img/James_Klein-ca.png" alt="James Klein logo">
+                <nav>
+                    <ul role="menubar">
+                        <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
+                        <li role="presentation"><a href="about.html" role="menuitem">About Me</a></li>
+                        <li role="presentation"><a href="contact.html" role="menuitem">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -37,16 +36,35 @@
                 Tel +rando phone<br>
                 Skype mmm.video<br>
                 <a href="mailto:my.email@emailaddress.com">my.email@emailaddress.com</a>
-              </div>
+            </div>
+
+            <form action="" method="post" id="contact-form">
+                <label for="email" class="standard-label">E-mail: </label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="telephone" class="standard-label">Telephone: </label>
+                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone" name="telephone">
+              
+                <label for="message" class="standard-label">Message: </label>
+                <textarea id="message" name="message" maxlength="240" required></textarea>
+              
+                <input type="submit" value="Send message">
+            </form>
+            
         </main>
         <footer>
             <p>Find me on</p>
             <section>
-                
-                    <a href="#"><img src="img/github.svg" alt="GitHub logo"></a>
-                    <a href="#"><img src="img/Twitter X.svg" alt="Twitter logo"></a>
-                    <a href="#"><img src="img/LinkedIn_icon.svg" alt="LinkedIn logo"></a>
-                
+                <a href="#"><img src="img/github.svg" alt="GitHub logo"></a>
+                <a href="#"><img src="img/Twitter X.svg" alt="Twitter logo"></a>
+                <a href="#"><img src="img/LinkedIn_icon.svg" alt="LinkedIn logo"></a>
+            </section>
+            <section>
+                <a href="#" aria-label="Back to top">Back to top</a>
+                <a href="https://bit.ly/sdkikweb" target="_blank">Archived Website</a>
+                <a href="files/cv.pdf" download target="_blank">Download my CV</a>
             </section>
         </footer>
+        <script src="js/tota11y.min.js"></script>
 </body>
+</html>
