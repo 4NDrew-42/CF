@@ -213,6 +213,7 @@ button:hover {
     margin: 0 auto;
     max-width: 800px;
     min-width: 360px;
+    padding: 0 20px;
 }
 
 .profile__portrait {
@@ -257,6 +258,10 @@ button:hover {
     max-width: 600px;
 }
 
+#message {
+    width: 300px;
+    height: 150px;
+}
 table {
     border-collapse: collapse;
     width: 70%;
@@ -338,31 +343,23 @@ td, th {
 /* Media queries */
 @media all and (max-width: 500px) {
     .grid {
-        /*-ms-grid-columns: 1fr;*/
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
-        grid-gap: 10px;
-        /*-ms-grid-columns: 1fr 10px 1fr;*/
-        grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-
-@media all and (max-width: 750px) {
+  }
+  @media all and (max-width: 750px) {
     .grid {
-        grid-gap: 10px;
-        }
-        .grid__item:last-child {
-          grid-column: auto / auto;
-          grid-row: auto / auto;
-        }
-
-
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
     h1 {
-        font-size: 22px;
+      font-size: 22px;
     }
-}
-
-}
+  }
