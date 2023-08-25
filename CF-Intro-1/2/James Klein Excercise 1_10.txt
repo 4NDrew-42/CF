@@ -1,0 +1,26 @@
+James Klein Excercise 1_10 
+
+https://4ndrew-42.github.io/CF/CF-Intro-1/2/index.html
+
+
+
+
+Linters-
+
+HtmlHint
+Stylelint
+axe Accessibility Linter
+VSCode CSS linter
+
+
+
+Issues found in testing-
+
+
+Work Page - Broken Media Queries
+
+<section> tags without headers - changed to <div> tags
+
+Twitter X.png downloaded from web, inappropriate name - changed to Twitter_X.png
+
+Extra <body> tag on some pages from pasting - removed
