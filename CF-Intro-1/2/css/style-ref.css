@@ -1,0 +1,138 @@
+:root {
+    /* Colors */
+    --primary-bg-color: #fff;
+    --link-color: #357b70;
+    --hover-color: #489c79;
+    --secondary-btn-color: #e0b354;
+    --secondary-btn-text-color: #2b2b2b;
+    --visited-link-color: #05676e;
+    --button-shadow-color: rgba(0, 0, 0, 0.3);
+
+    /* Font properties */
+    --base-font: 'Lato', sans-serif;
+    --base-font-weight: 400;
+    --base-font-size: 16px;
+    --header-font-weight: 700;
+    --h1-font-size: 30px;
+    --h2-font-size: 24px;
+    --h3-font-size: 18px;
+
+    /* Other values */
+    --base-border-radius: 3px;
+    --base-transition: opacity .6s;
+    --base-padding: 10px;
+    --base-margin: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: var(--base-font);
+    font-weight: var(--base-font-weight);
+    font-size: var(--base-font-size);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--header-font-weight);
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+a {
+    color: var(--link-color);
+}
+
+.button, button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--link-color);
+    color: white;
+    text-decoration: none;
+    padding: var(--base-padding);
+    border-radius: var(--base-border-radius);
+    border-bottom: 2px solid var(--button-shadow-color);
+    transition: var(--base-transition);
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    opacity: 0.8;
+}
+
+.button__secondary {
+    background-color: var(--secondary-btn-color);
+    color: var(--secondary-btn-text-color);
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: var(--base-margin);
+    border-radius: 50%;
+}
+
+.profile {
+    min-width: 360px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  /* changed from "right" because "right" is not a valid value for align-items */
+    margin-bottom: var(--base-margin);
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:active {
+    color: var(--hover-color);
+}
+
